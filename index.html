@@ -1,0 +1,192 @@
+<html>
+	<head>
+		<title>jsCard :: xTalk Web Applications</title>
+		
+		<style type="text/css">
+		
+		body
+		{
+		background-color: #607AC5;
+		background-repeat: repeat-y;
+		background-image: url( 'images/bkgnd.jpg' );
+		background-position: center center;
+		}
+		
+		#stage
+		{
+		position: absolute;
+		top: 0px;
+		width: 705px;
+		height: 100%;
+		left: 50%;
+		margin-left: -352px;
+		}
+				
+		#content
+		{
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		margin-left: -352px;
+		width: 701px;
+		}
+		
+		#maincolumn
+		{
+		position: absolute;
+		top: 242px;
+		left: 30px;
+		width: 300px;
+		font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 12px;
+		line-height: 22px;
+		text-align: justify;
+		}
+		
+			#maincolumn h1
+			{
+				font-size: 18px;
+			}
+			
+		#othercolumn
+		{
+		position: absolute;
+		top: 270px;
+		left: 370px;
+		width: 300px;
+		height: 500px;
+		background-image: url( 'images/loginbg.jpg' );
+		background-repeat: no-repeat;
+		padding: 20px;
+		font-family: "MS Trebuchet", Verdana, Arial, sans-serif;
+		font-size: 13px;
+		}
+		
+		#othercolumn label
+		{
+			display: block;
+			font-family: "MS Trebuchet", Verdana, Arial, sans-serif;
+			font-size: 10px;
+			color: #555;
+			margin-bottom: 5px;
+		}
+		
+		#othercolumn input
+		{
+			width: 100%;
+		}
+		
+			
+.errnote
+{
+	font-size: 18px;
+	padding: 10px;
+	color: #B34F4F;
+	background-color: #F4E1E1;
+}
+			
+.tipnote
+{
+	font-size: 18px;
+	padding: 10px;
+	color: #4E7437;
+	background-color: #ECFFE0;
+}
+
+		
+		</style>
+
+		<script type="text/javascript">
+		
+/* Client-side access to querystring name=value pairs
+	Version 1.2.3
+	22 Jun 2005
+	Adam Vandenberg
+*/
+function Querystring(qs) { // optionally pass a querystring to parse
+	this.params = new Object()
+	this.get=Querystring_get
+	
+	if (qs == null)
+		qs=location.search.substring(1,location.search.length)
+
+	if (qs.length == 0) return
+
+// Turn <plus> back to <space>
+// See: http://www.w3.org/TR/REC-html40/interact/forms.html#h-17.13.4.1
+	qs = qs.replace(/\+/g, ' ')
+	var args = qs.split('&') // parse out name/value pairs separated via &
+	
+// split out each name=value pair
+	for (var i=0;i<args.length;i++) {
+		var value;
+		var pair = args[i].split('=')
+		var name = unescape(pair[0])
+
+		if (pair.length == 2)
+			value = unescape(pair[1])
+		else
+			value = name
+		
+		this.params[name] = value
+	}
+}
+
+function Querystring_get(key, default_) {
+	// This silly looking line changes UNDEFINED to NULL
+	if (default_ == null) default_ = null;
+	
+	var value=this.params[key]
+	if (value==null) value=default_;
+	
+	return value
+}
+		
+		</script>
+
+
+	</head>
+	
+	<body>
+	
+	<div id="stage"><br/></div>
+	
+	<div id="content">
+		<img src="images/header.jpg" border="0" />
+			<noscript class='errnote'>
+				You need to have JavaScript enabled to use jsCard. Sorry about that.
+			</noscript>
+		
+		<div id="maincolumn">
+			<script type="text/javascript">
+			
+			var qs = new Querystring();
+			
+			if ( qs.get( "loginerror", "0" ) == 1 )
+			{
+				document.write( "<p class='errnote'>Login failed. Please check your username or password and try again.</p>" );
+			}
+			else if ( qs.get( "loggedout", "0" ) == 1 )
+			{
+				document.write( "<p class='tipnote'>Successfully logged out.</p>" );
+			}
+			else if ( qs.get( "signedup", "0" ) == 1 )
+			{
+				document.write( "<p class='tipnote'>Account created successfully.</p>" );
+			}
+			
+			document.write( "<h1>You heard us right.</h1><p>So we got bored one day and decided to write an xTalk to JavaScript language translator, right? Then one thing leads to another, and before long we're writing a full scale xTalk development environment for the web.</p><p>So, how do you play with it? Simple, <a href=\"signup.html\">Sign up</a> for an account! When you log in, you'll be able to create, edit, and modify stacks. Or, you can view the <a href=\"public.php\">public stacks</a>, with or without an account. </p><p>This is all still firmly in the \"experimental\" stage, so don't be surprised if something unexpectedly breaks. Oh, and one other thing. If I detect <b>anyone</b> attempting to attack my server through this, I will immediately pursue the matter with the appropriate authorities. </p> ");
+		        </script>
+			
+
+		</div>
+
+                        <script>
+			document.write( "<div id=\"othercolumn\"><div style=\"width:85%\"><b>Log in to your account...</b><br/><br/><form action=\"signin.php\" method=\"POST\"><label for=\"jscdn\">User Name:</label><input type=\"text\" id=\"jscdn\" name=\"jscdn\" /><br/><br/><label for=\"jscdp\">Password:</label><input type=\"password\" id=\"jscdp\" name=\"jscdp\" /><br/><br/><input type=\"submit\" value=\"Log In!\" style=\"width:auto;\" /><br/></form><big>Need an account? <a href=\"signup.html\">Sign up!</a></big><br/>Sign up, and then taunt your friends who don't have one!<br/><br/><small><a href=\"lostpassword.html\">Forget your password?</a></small></div>" );
+			</script>	
+		</div>
+		
+	</div>
+	
+	</body>
+</html>

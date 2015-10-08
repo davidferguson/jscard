@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- SoundManager Flash configuration -->
+<!-- Sound IDs are referenced from JS -->
+
+<items baseHref="audio/" defaultVol="100">
+
+ <sound id="beep" href="beep.mp3" />
+ <sound id="whoosh" href="whoosh.mp3" />
+ <sound id="sonar" href="sonar.mp3" />
+
+</items>

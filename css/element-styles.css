@@ -1,0 +1,482 @@
+/*
+These CSS selectors are used for the styes of buttons and fields
+Selectors which have fld_ at the start of them are for fields, and
+those which do not are for buttons
+*/
+
+.opaque {
+    border: none;
+    background: white;
+}
+
+.opaqueNoAuto {
+    border: none;
+    background: white;
+}
+
+.opaqueHilite {
+    border: none;
+    background: white;
+}
+
+.opaqueHiliteNoAuto {
+    border: none;
+    background: white;
+}
+
+.rectangle {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+	color: black;
+}
+.rectangle:enabled:active {
+    background: black;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+.rectangle:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+}
+
+.rectangleHilite {
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+	color: white;
+}
+.rectangleHilite:enabled:active {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+	color: black;
+}
+
+.rectangleNoAuto {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+	color: white;
+}
+.rectangleNoAuto:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+}
+
+.rectangleHiliteNoAuto {
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+	color: white;
+}
+
+.roundrect {
+	color: black;
+    border-radius: 5px;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+}
+.roundrect:enabled:active {
+    background: black;
+    color: white;
+    border-color: white;
+}
+.roundrect:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+	box-shadow: 1px 1px #BABABA;
+}
+
+.roundrectHilite {
+    border-radius: 5px;
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: white;
+}
+.roundrectHilite:enabled:active {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+.roundrectNoAuto {
+    border-radius: 5px;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color:black;
+}
+.roundrectNoAuto:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+	box-shadow: 1px 1px #BABABA;
+}
+
+.roundrectHiliteNoAuto {
+    border-radius: 5px;
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: white;
+}
+
+.shadow {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: black;
+}
+.shadow:enabled:active {
+    background: black;
+    color: white;
+    border-color: white;
+}
+.shadow:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+	box-shadow: 1px 1px #BABABA;
+}
+
+.shadowHilite{
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: white;
+}
+.shadowHilite:enabled:active {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: black;
+}
+
+.shadowNoAuto {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+}
+.shadowNoAuto:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+	box-shadow: 1px 1px #BABABA;
+}
+
+.shadowHiliteNoAuto{
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: white;
+}
+
+.checkbox {
+    border-style: none;
+}
+.radiobutton {
+    border-style: none;
+}
+
+.standard {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+	color: black;
+}
+.standard:enabled:active {
+    background: black;
+    color: white;
+    border-color: white;
+}
+.standard:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+}
+
+.standardHilite {
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+	color: white;
+}
+.standardHilite:enabled:active {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+	color: black;
+}
+
+.standardNoAuto {
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+.standardNoAuto:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+}
+
+.standardHiliteNoAuto {
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+	color: white;
+}
+
+.default {
+    background: white;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: double;
+	color: black;
+}
+.default:enabled:active {
+    background: black;
+    color: white;
+    border-color: white;
+}
+.default:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+}
+
+.defaultHilite {
+    background: black;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: double;
+	color: white;
+}
+.defaultHilite:enabled:active {
+    background: white;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: double;
+	color: black;
+}
+
+.defaultNoAuto {
+    background: white;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: double;
+}
+.defaultNoAuto:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+}
+
+.defaultHiliteNoAuto {
+    background: black;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: double;
+	color: white;
+}
+
+.transparent {
+    border: none;
+    background: none;
+}
+
+.oval {
+    border-radius: 1000px;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: black;
+}
+.oval:enabled:active {
+    background: black;
+    color: white;
+    border-color: white;
+}
+.oval:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+	box-shadow: 1px 1px #BABABA;
+}
+
+.ovalHilite {
+    border-radius: 1000px;
+    background: black;
+    border-style: white;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: white;
+}
+.ovalHilite:active:enabled {
+    border-radius: 1000px;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: black;
+}
+
+.ovalNoAuto {
+    border-radius: 1000px;
+    background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+}
+.ovalNoAuto:disabled {
+	background-color:#E6E6E6;
+	color:#BABABA;
+	border-color:#BABABA;
+	box-shadow: 1px 1px #BABABA;
+}
+
+.ovalHiliteNoAuto {
+    border-radius: 1000px;
+    background: black;
+    border-style: white;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 1px 1px black;
+	color: white;
+}
+
+.popup {
+    
+}
+
+
+
+
+/*
+These styles are for the fields
+*/
+
+.fld_transparent {
+    border: none;
+    background: none;
+    resize: none;
+    overflow: hidden
+}
+
+.fld_opaque {
+    border: none;
+    background: white;
+    resize: none;
+    overflow: hidden;
+}
+
+.fld_rectangle {
+    background: white;
+    border-color: black;
+    resize: none;
+    overflow: hidden;
+}
+
+.fld_shadow {
+    background: white;
+    border-color: black;
+    resize: none;
+    box-shadow: 2px 2px black;
+    overflow: hidden;
+}
+
+.fld_scrolling {
+    background: white;
+    border-color: black;
+    resize: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+
+/*
+These styles for for editing modes
+*/
+
+.btn_editing {
+	border: 1px solid rgb(0, 0, 0);
+	visibility:visible;
+}
+
+.btn_editing_selected {
+	border: 1px dashed rgb(0, 0, 0);
+	visibility:visible;
+}
+
+.fld_editing {
+	border: 1px solid rgb(0, 0, 0);
+	visibility:visible;
+}
+
+.fld_editing_selected {
+	visibility:visible;
+	border: 1px dashed rgb(0, 0, 0);
+}
+
+.blk_editing {
+	visibility: visible;
+	background-color: grey;
+	border: 1px solid black;
+}
+
+.blk_editing_selected {
+	visibility: visible;
+	background-color: grey;
+	border: 1px dashed black;
+}
