@@ -14,7 +14,7 @@ function hpop__getImage( whatCard )
 {
 	var fullImage = whatCard.style.backgroundImage;
 	fullImage = fullImage.split("/");
-	var imageName = fullImage[fullImage.length];
+	var imageName = fullImage[fullImage.length-1];
 	imageName = imageName.slice(-2);
 	return imageName;
 }
